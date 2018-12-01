@@ -72,11 +72,16 @@ python tameofthrones.py
 
 **Displaying the victorious King Shan and his allies**
 
-![King Shan and allies](https://raw.githubusercontent.com/sreenathmmenon/TameofThrones/master/images/universe_ruler_part4.png)
+![King Shan and allies](https://github.com/sreenathmmenon/TameofThrones/blob/master/images/universe_ruler_part4.png)
 
 **Case when none of the messages have been valid**
 
-![Invalid Messages](https://raw.githubusercontent.com/sreenathmmenon/TameofThrones/master/images/universe_ruler_part5.png)
+![Invalid Messages](https://github.com/sreenathmmenon/TameofThrones/blob/master/images/universe_ruler_part5.png)
+
+
+### Continous Integrations Status
+
+![CI Status](https://raw.githubusercontent.com/sreenathmmenon/TameofThrones/master/images/continous_integration_circleci.png)
 
 
 ### Configuring Continous Integration Build System based on CirecleCI
