@@ -60,23 +60,23 @@ python tameofthrones.py
 **Display of Initial Questions**
 
 
-![Initial Questions](https://raw.githubusercontent.com/sreenathmmenon/TameofThrones/master/images/universe_ruler_part1.png)
+![Initial Questions](https://github.com/sreenathmmenon/TameofThrones/blob/master/images/universe_ruler_part1.png)
 
 **King Selection Option**
 
-![King Selection option](https://raw.githubusercontent.com/username/TameofThrones/master/images/universe_ruler_part2.png)
+![King Selection option](https://github.com/sreenathmmenon/TameofThrones/blob/master/images/universe_ruler_part2.png)
 
 **Option to Input Messages for Kingdoms**
 
-![Message input option](https://raw.githubusercontent.com/username/TameofThrones/master/images/universe_ruler_part3.png)
+![Message input option](https://github.com/sreenathmmenon/TameofThrones/blob/master/images/universe_ruler_part3.png)
 
 **Displaying the victorious King Shan and his allies**
 
-![King Shan and allies](https://raw.githubusercontent.com/username/TameofThrones/master/images/universe_ruler_part4.png)
+![King Shan and allies](https://raw.githubusercontent.com/sreenathmmenon/TameofThrones/master/images/universe_ruler_part4.png)
 
 **Case when none of the messages have been valid**
 
-![Invalid Messages](https://raw.githubusercontent.com/username/TameofThrones/master/images/universe_ruler_part5.png)
+![Invalid Messages](https://raw.githubusercontent.com/sreenathmmenon/TameofThrones/master/images/universe_ruler_part5.png)
 
 
 ### Configuring Continous Integration Build System based on CirecleCI
