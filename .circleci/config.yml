@@ -24,5 +24,5 @@ jobs:
           command: |
             . tameofthrones/bin/activate
             flake8 --exclude=tameofthrones* --statistics
-            pytest -v --cov=calculator
+            pytest -v --cov=tameofthrones
 
