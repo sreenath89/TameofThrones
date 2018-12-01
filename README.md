@@ -186,15 +186,14 @@ The actual shell commands will be nested within.
 * name:
 
 ```
-The CircleCI user interface shows you every build step in the form of an expandable section.
-The title of the section is taken from the value associated with the name key from config file.
+The value corresponding to the name key will be shown as the title for every build step in CircleCI user interface.
 ```
 
 * command:
 
 ```
 This key represents the command to run via the shell. 
-The | symbol specifices that what follows is a literal set of commands, one per line, similar to shell/bash script.
+The '|' symbol specifies that what follows is a literal set of commands, one per line, similar to shell/bash script.
 ```
 
 **Sample automated setup file**
@@ -203,8 +202,8 @@ File name - sample_build.sh
 
 Can be used when all the required python modules are already present in our environment.
 
+```
 chmod + x sample_build.sh
-
 ```
 
-```
+All the modules that are required for correct functioning of this project have been specified in the requirements.txt file.
