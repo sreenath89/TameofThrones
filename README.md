@@ -92,6 +92,10 @@ python tameofthrones.py
 
 ### Configuring Continous Integration Build System based on CirecleCI
 
+Latest CI build status can be checked from the following location:
+
+Ref: [Latest CI Build Details](https://circleci.com/gh/sreenathmmenon/TameofThrones)
+
 1. Following config file is used for setting up Continous Integration for the project.
 
 ```
