@@ -46,7 +46,7 @@ flake8 --exclude=venv* --statistics
 8. Execute unittests and verify the results
 
 ```
-python -m unittest -v tameofthrones.test_tameofthrones
+python -m unittest -v test_tameofthrones
 ```
 
 9. Calculate the code coverage. We can also verify the test output based on pytest module from here.
