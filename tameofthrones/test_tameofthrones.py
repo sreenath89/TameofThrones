@@ -65,8 +65,8 @@ class TestUniverse(unittest.TestCase):
 
     def test_get_universe_kings(self):
         expected_output = 'Land King, King Shan,'\
-                          'Dragon King, Ice King,'\
-                          'Air King, Water King'
+                          ' Dragon King, Ice King,'\
+                          ' Air King, Water King'
         orig_output = self.uniObj.get_kings()
         self.assertEqual(orig_output, expected_output)
 
