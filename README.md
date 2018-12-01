@@ -220,7 +220,7 @@ All the modules that are required for correct functioning of this project have b
 ![Output 1](https://github.com/sreenathmmenon/TameofThrones/blob/master/images/test_output1.png)
 
 
-![Output 2](https://github.com/sreenathmmenon/TameofThrones/blob/master/images/test_output1.png)
+![Output 2](https://github.com/sreenathmmenon/TameofThrones/blob/master/images/test_output2.png)
 
 
-![Output 3](https://github.com/sreenathmmenon/TameofThrones/blob/master/images/test_output1.png)
+![Output 3](https://github.com/sreenathmmenon/TameofThrones/blob/master/images/test_output3.png)
