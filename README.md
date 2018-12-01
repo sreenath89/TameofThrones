@@ -28,13 +28,13 @@ git clone https://github.com/sreenathmmenon/TameofThrones
 5. Install the required dependencies/modules
 
 ```
+cd TameofThrones
 pip install -r requirements.txt
 ```
 
 6. Enter into project directory
 
 ```
-cd TameofThrones
 cd tameofthrones
 ```
 
