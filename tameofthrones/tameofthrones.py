@@ -4,8 +4,21 @@ from config import kingdom_dict, universe_name
 
 
 def find_kingdom(king_name):
+    """
+    Function to fetch the name of Kingdom based on the King
+    Args:
+        king_name: name of the king
+    Return:
+        (str) kname: name of the kingdom, if king is
+                     present in the dictionary, else
+                     return None
+    """
+
+    # loop through eachitem in the kingdom dictionary
     for key, value in kingdom_dict.items():
+        # compare the name of king
         if value[0].lower() == king_name.lower():
+            # fetch the kingdom name
             kname = key
             break
         else:
@@ -41,6 +54,7 @@ def main():
             except EOFError:
                 break
             messages.append(line)
+
         '''
         loop through each message and find the kingdom name
         and message to kingdom
@@ -65,7 +79,6 @@ def main():
                         kingdom_dict.get(
                             message_to_kingdom
                         )[1])
-                # emblem_char_count = kingdomObj.get_emblem_char_count()
 
                 # send the message for validation
                 if kingdomObj.validate_message(message, to_be_ruler):
