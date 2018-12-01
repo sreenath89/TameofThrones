@@ -3,6 +3,16 @@ import kingdom
 from config import kingdom_dict, universe_name
 
 
+def find_kingdom(king_name):
+    for key, value in kingdom_dict.items():
+        if value[0].lower() == king_name.lower():
+            kname = key
+            break
+        else:
+            kname = None
+    return kname
+
+
 def main():
     '''
     '''
@@ -14,7 +24,8 @@ def main():
     # Enter only if there isn't any ruler for the Universe
     if not universe_ruler:
         to_be_ruler = str(raw_input("\n Who wants to be the ruler of " +
-                                    universe_name + " (Options are " + kings + "?\n"))
+                                    universe_name +
+                                    " (Options are " + kings + "?\n"))
         print("Input Messages to kingdoms from " + to_be_ruler +
               "(Linux - Ctrl-D or Windows - Ctrl-Z to save it):\n")
         allies = []
@@ -43,8 +54,17 @@ def main():
                 message = ''
 
             # validate the Kindom name present in the user input
-            if message_to_kingdom in kingdom_dict.keys():
-                kingdomObj = kingdom.Kingdom(message_to_kingdom, kingdom_dict.get(message_to_kingdom)[0], kingdom_dict.get(message_to_kingdom)[1])
+            if message_to_kingdom in kingdom_dict.keys() and \
+                    message_to_kingdom != find_kingdom(
+                    to_be_ruler):
+                kingdomObj = kingdom.Kingdom(
+                        message_to_kingdom,
+                        kingdom_dict.get(
+                            message_to_kingdom
+                        )[0],
+                        kingdom_dict.get(
+                            message_to_kingdom
+                        )[1])
                 # emblem_char_count = kingdomObj.get_emblem_char_count()
 
                 # send the message for validation

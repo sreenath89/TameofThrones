@@ -64,7 +64,9 @@ class TestUniverse(unittest.TestCase):
         self.assertIsInstance(orig_output, str)
 
     def test_get_universe_kings(self):
-        expected_output = 'Land King, King Shan, Dragon King, Ice King, Air King, Water King'
+        expected_output = 'Land King, King Shan,'\
+                          'Dragon King, Ice King,'\
+                          'Air King, Water King'
         orig_output = self.uniObj.get_kings()
         self.assertEqual(orig_output, expected_output)
 
@@ -87,12 +89,14 @@ class TestUniverse(unittest.TestCase):
 
     def test_validate_message(self):
         message_to_fire = 'Fire, "Drag on Martin!"'
-        orig_output = self.kingObj1.validate_message(message_to_fire, self.sender)
+        orig_output = self.kingObj1.validate_message(
+                      message_to_fire, self.sender)
         self.assertTrue(orig_output)
 
     def test_validate_message_failure(self):
         message_to_fire = 'Fire, "Drag on Martin!"'
-        orig_output = self.kingObj.validate_message(message_to_fire, self.sender)
+        orig_output = self.kingObj.validate_message(
+                      message_to_fire, self.sender)
         self.assertFalse(orig_output)
 
     def test_debug_incorrect_message(self):
