@@ -19,16 +19,16 @@ virtualenv venv
 cd venv
 ```
 
-4. Install the required dependencies/modules
-
-```
-pip install -r requirements.txt
-```
-
-5. Clone the project using github url
+4. Clone the project using github url
 
 ```
 git clone https://github.com/sreenathmmenon/TameofThrones
+```
+
+5. Install the required dependencies/modules
+
+```
+pip install -r requirements.txt
 ```
 
 6. Enter into project directory
