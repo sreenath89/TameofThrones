@@ -81,7 +81,7 @@ python tameofthrones.py
 
 ### Continous Integrations Status
 
-![CI Status](https://github.com/sreenathmmenon/TameofThrones/master/images/continous_integration_circleci.png)
+![CI Status](https://github.com/sreenathmmenon/TameofThrones/blob/master/images/continous_integration_circleci.png)
 
 
 ### Configuring Continous Integration Build System based on CirecleCI
@@ -197,3 +197,14 @@ This key represents the command to run via the shell.
 The | symbol specifices that what follows is a literal set of commands, one per line, similar to shell/bash script.
 ```
 
+**Sample automated setup file**
+
+File name - sample_build.sh
+
+Can be used when all the required python modules are already present in our environment.
+
+chmod + x sample_build.sh
+
+```
+
+```
