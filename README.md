@@ -81,7 +81,7 @@ python tameofthrones.py
 
 ### Continous Integrations Status
 
-![CI Status](https://raw.githubusercontent.com/sreenathmmenon/TameofThrones/master/images/continous_integration_circleci.png)
+![CI Status](https://github.com/sreenathmmenon/TameofThrones/master/images/continous_integration_circleci.png)
 
 
 ### Configuring Continous Integration Build System based on CirecleCI

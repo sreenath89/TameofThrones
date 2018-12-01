@@ -36,11 +36,16 @@ def main():
 
     # Enter only if there isn't any ruler for the Universe
     if not universe_ruler:
-        to_be_ruler = str(raw_input("\nWho wants to be "
-                                    "the ruler of " +
-                                    universe_name +
-                                    " (Options are "
-                                    + kings + "?\n"))
+        to_be_ruler = ''
+
+        # ensure that only valid king names are entered
+        while to_be_ruler not in king_list:
+            to_be_ruler = str(raw_input("\nWho wants to "
+                                        "be the ruler of "
+                                        + universe_name +
+                                        " (Options are "
+                                        + kings + "?\n"))
+            to_be_ruler = to_be_ruler.title()
         print("\nInput Messages to kingdoms from "
               + to_be_ruler +
               "(One line for each unique message | "
@@ -89,13 +94,19 @@ def main():
 
                 # send the message for validation
                 if kingdomObj.validate_message(message, to_be_ruler):
-                    allies.append(message_to_kingdom)
+                    allies.append(message_to_kingdom.title())
+
+        # ensure that one kingdom has only one entry
+        # even if multiple messages have been sent
+        unique_allies = set(allies)
 
         # check if the ally count is atleast 3
         # if so, we set the new ruler for the universe
-        if len(allies) >= 3:
+        if len(unique_allies) >= 3:
             uniObj.ruler = to_be_ruler
-            uniObj.allies = allies
+
+            # convert set to list and pass it
+            uniObj.allies = list(unique_allies)
 
         # display the information regarding the universe
         uniObj.get_info()
