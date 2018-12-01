@@ -1,4 +1,3 @@
 ## Tame of Thrones Challenge
 
-[![Build status](https://travis-ci.org/sreenathmmenon/travis-lab.svg?master)](https://travis-ci.org/sreenathmmenon)
-
+[![CircleCI](https://circleci.com/gh/sreenathmmenon/TameofThrones.svg?style=svg)](https://circleci.com/gh/sreenathmmenon/TameofThrones)
