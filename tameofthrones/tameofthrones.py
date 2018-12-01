@@ -36,11 +36,18 @@ def main():
 
     # Enter only if there isn't any ruler for the Universe
     if not universe_ruler:
-        to_be_ruler = str(raw_input("\n Who wants to be the ruler of " +
+        to_be_ruler = str(raw_input("\nWho wants to be "
+                                    "the ruler of " +
                                     universe_name +
-                                    " (Options are " + kings + "?\n"))
-        print("Input Messages to kingdoms from " + to_be_ruler +
-              "(Linux - Ctrl-D or Windows - Ctrl-Z to save it):\n")
+                                    " (Options are "
+                                    + kings + "?\n"))
+        print("\nInput Messages to kingdoms from "
+              + to_be_ruler +
+              "(One line for each unique message | "
+              "Ex- <Kingdom Name>, <Message> | "
+              "Enter - to move to next line, "
+              "Linux - Ctrl-D or Windows - Ctrl-Z "
+              "to stop inout save it):\n")
         allies = []
         messages = []
 
