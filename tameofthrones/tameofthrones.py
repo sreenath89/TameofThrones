@@ -52,7 +52,7 @@ def main():
               "Ex- <Kingdom Name>, <Message> | "
               "Enter - to move to next line, "
               "Linux - Ctrl-D or Windows - Ctrl-Z "
-              "to stop inout save it):\n")
+              "to stop and save it):\n")
         allies = []
         messages = []
 
